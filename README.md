@@ -3,11 +3,11 @@
 
 See [instructions.md](instructions.md) for submission instructions.
 
-# TODO: Replace this with Your Project Title
+# Higher Order Function Deep Dive
 
 ## Description
 
-TOD: Replace this with at least a few paragraphs describing your project.
+The DoWith Review will overview encapsulating comp
 ## Repository Organization
 
 TODO: Replace this with a description of the organization of your repository.
