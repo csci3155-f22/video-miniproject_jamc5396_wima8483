@@ -30,5 +30,6 @@ Overview of higher-order functions in Scala
 - https://www.youtube.com/watch?v=KwrwkyUq6jY 
 - https://docs.scala-lang.org/tour/higher-order-functions.html 
 - https://www.geeksforgeeks.org/higher-order-functions-in-scala/ 
+
 Foldleft v. Foldright
 - https://coderwall.com/p/4l73-a/scala-fold-foldleft-and-foldright 
