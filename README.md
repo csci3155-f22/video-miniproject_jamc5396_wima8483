@@ -26,3 +26,4 @@ TODO: Update the following links and remove this line.
 - Slides (if you use them in your recording): [slides.pdf](slides.pdf) and slide sources (e.g., [slides.pptx](slides.pptx) or [slides.key](slides.key)).
 
 ## Resources
+https://www.youtube.com/watch?v=KwrwkyUq6jY Overview of higher-order functions in Scala
