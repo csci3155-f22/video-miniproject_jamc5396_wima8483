@@ -33,3 +33,6 @@ Overview of higher-order functions in Scala
 
 Foldleft v. Foldright
 - https://coderwall.com/p/4l73-a/scala-fold-foldleft-and-foldright 
+
+flatMap
+- https://www.geeksforgeeks.org/scala-flatmap-method/
