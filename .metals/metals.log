@@ -379,3 +379,104 @@ atomicOps(2, 2, (x, y) => x - y) //difference
 ^^^^^^^^^
 2022.12.05 23:54:14 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 0.3s
 2022.12.05 23:54:36 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 0.63s
+2022.12.06 12:29:16 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 0.78s
+[31merror[39m: workspace/src/main/scala/lesson1.worksheet.sc:50:45: 
+Not found: ele
+val z = l.foldLeft(List(Nil)){ (acc, el) => ele :: acc }
+                                            ^^^
+2022.12.06 12:30:29 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 0.5s
+[31merror[39m: workspace/src/main/scala/lesson1.worksheet.sc:50:45: 
+Not found: ele
+val z = l.foldLeft(List(Nil)){ (acc, el) => ele :: acc }
+                                            ^^^
+2022.12.06 12:30:29 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 0.35s
+[31merror[39m: workspace/src/main/scala/lesson1.worksheet.sc:50:45: 
+Not found: ele
+val z = l.foldLeft(List(Nil)){ (acc, el) => ele :: acc }
+                                            ^^^
+2022.12.06 12:30:29 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 0.23s
+[31merror[39m: workspace/src/main/scala/lesson1.worksheet.sc:50:45: 
+Found:    (el : Int)
+Required: scala.collection.immutable.Nil.type
+val z = l.foldLeft(List(Nil)){ (acc, el) => el :: acc }
+                                            ^^
+2022.12.06 12:30:37 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 0.37s
+[31merror[39m: workspace/src/main/scala/lesson1.worksheet.sc:50:39: 
+Found:    List[Int]
+Required: scala.collection.immutable.Nil.type
+val z = l.foldLeft(Nil){ (acc, el) => el :: acc }
+                                      ^^^^^^^^^
+2022.12.06 12:30:47 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 0.3s
+2022.12.06 12:30:56 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 0.5s
+[31merror[39m: workspace/src/main/scala/lesson1.worksheet.sc:50:50: 
+value :: is not a member of Int
+val z = l.foldLeft(List.empty){ (acc, el) => acc :: el }
+                                                 ^^^^^
+2022.12.06 12:31:11 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 0.26s
+[31merror[39m: workspace/src/main/scala/lesson1.worksheet.sc:50:50: 
+value :: is not a member of Int
+val z = l.foldLeft(List.empty){ (acc, el) => acc :: el }
+                                                 ^^^^^
+2022.12.06 12:31:16 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 0.31s
+2022.12.06 12:31:35 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 0.52s
+2022.12.06 12:32:17 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/fold.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.06 12:32:17 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 4.46s
+2022.12.06 12:32:29 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 0.49s
+2022.12.06 12:32:30 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 0.48s
+2022.12.06 12:32:32 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.38s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:3:51: 
+value :: is not a member of Int
+val fr = l.foldRight(List.empty){ (acc, el) => el :: acc }
+                                                  ^^^^^^
+2022.12.06 12:33:13 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.2s
+2022.12.06 12:33:22 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.44s
+Dec 06, 2022 12:33:34 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1619)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1619)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.12.06 12:33:40 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.49s
+2022.12.06 12:33:47 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.35s
+2022.12.06 12:34:15 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.41s
+2022.12.06 12:34:19 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.38s
+Dec 06, 2022 12:34:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4991
+2022.12.06 12:35:35 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.34s
