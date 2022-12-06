@@ -480,3 +480,330 @@ java.lang.AssertionError: NoDenotation.owner
 Dec 06, 2022 12:34:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 4991
 2022.12.06 12:35:35 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.34s
+2022.12.06 12:36:51 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.38s
+2022.12.06 12:36:54 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.35s
+2022.12.06 12:42:54 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/list.scala
+2022.12.06 12:43:15 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/list.scala
+2022.12.06 12:43:33 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/list.scala
+2022.12.06 12:43:47 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/list.scala
+2022.12.06 12:46:32 WARN  no build target for: /Users/jackmcdonald/Downloads/Lab3RecitationSpec.scala
+Dec 06, 2022 12:46:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5220
+[31merror[39m: ../../Downloads/week5-solution.worksheet.sc:16:10: 
+Not found: jsy
+ import  jsy.lab3.Parser 
+         ^^^
+[31merror[39m: ../../Downloads/week5-solution.worksheet.sc:18:8: 
+Not found: jsy
+import jsy.lab3.Parser.parse
+       ^^^
+[31merror[39m: ../../Downloads/week5-solution.worksheet.sc:21:8: 
+Not found: jsy
+import jsy.lab3.ast._
+       ^^^
+[31merror[39m: 
+week5-solution.worksheet.sc:14 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:15 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.startStatement(23, 0, 23, 25);
+
+
+[31merror[39m: ../../Downloads/week5-solution.worksheet.sc:24:8: 
+(<error Not found: jsy>#lab3.ast.jsy.student.Lab3 : <error Not found: jsy>) is not a valid import prefix, since it is not an immutable path
+import jsy.student.Lab3._
+       ^^^^^^^^^^^^^^^^
+[31merror[39m: 
+week5-solution.worksheet.sc:17 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:18 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.startStatement(24, 0, 24, 24);
+
+
+[31merror[39m: ../../Downloads/week5-solution.worksheet.sc:25:8: 
+(<error Not found: jsy>#lab3.ast.jsy.lab3 : <error Not found: jsy>) is not a valid import prefix, since it is not an immutable path
+import jsy.lab3.Lab3Like
+       ^^^^^^^^
+[31merror[39m: 
+week5-solution.worksheet.sc:20 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:21 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.startStatement(34, 1, 38, 2);
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:27 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:28 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.startStatement(88, 0, 96, 2);
+
+
+[31merror[39m: ../../Downloads/week5-solution.worksheet.sc:91:17: 
+Stable identifier required, but <error Not found: jsy>#lab3.ast.And found
+    case Binary(And, e1 , e2) => {
+                ^^^
+[31merror[39m: 
+week5-solution.worksheet.sc:38 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:39 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.startStatement(99, 0, 99, 56);
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:42 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.binder(res0, 99, 0, 99, 56);
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:43 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:44 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.startStatement(100, 0, 100, 54);
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:47 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.binder(res1, 100, 0, 100, 54);
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:48 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:49 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.startStatement(147, 0, 155, 1);
+
+
+[31merror[39m: ../../Downloads/week5-solution.worksheet.sc:150:17: 
+Stable identifier required, but <error Not found: jsy>#lab3.ast.And found
+    case Binary(And, e1 , e2) => {
+                ^^^
+[31merror[39m: 
+week5-solution.worksheet.sc:59 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:60 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.startStatement(158, 0, 158, 57);
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:63 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.binder(res2, 158, 0, 158, 57);
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:64 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:65 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.startStatement(159, 0, 159, 56);
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:68 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.binder(res3, 159, 0, 159, 56);
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:69 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:70 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.startStatement(201, 0, 216, 1);
+
+
+[31merror[39m: ../../Downloads/week5-solution.worksheet.sc:205:17: 
+Stable identifier required, but <error Not found: jsy>#lab3.ast.And found
+    case Binary(And, e1 , e2) => {
+                ^^^
+[31merror[39m: 
+week5-solution.worksheet.sc:87 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:88 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.startStatement(219, 0, 219, 77);
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:91 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.binder(res4, 219, 0, 219, 77);
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:92 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:93 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.startStatement(247, 0, 269, 1);
+
+
+[31merror[39m: ../../Downloads/week5-solution.worksheet.sc:252:17: 
+Stable identifier required, but <error Not found: jsy>#lab3.ast.And found
+    case Binary(And, e1 , e2) => {
+                ^^^
+[31merror[39m: ../../Downloads/week5-solution.worksheet.sc:265:23: 
+Stable identifier required, but <error Not found: jsy>#lab3.ast.None found
+        case Function(None, x, ebody) => eval4(extend(env, x, eval4(env, e2)), ebody)
+                      ^^^^
+[31merror[39m: 
+week5-solution.worksheet.sc:117 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:118 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.startStatement(272, 0, 272, 120);
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:121 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.binder(res5, 272, 0, 272, 120);
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:122 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.endStatement();
+
+
+[31merror[39m: 
+week5-solution.worksheet.sc:123 (mdoc generated code) 
+ Reference to $doc is ambiguous,
+it is both defined in object MdocSession
+and imported subsequently by import (<error Not found: jsy>#lab3.ast : <error Not found: jsy>)._
+    $doc.endSection();
+
+
+2022.12.06 12:47:33 INFO  no build target found for /Users/jackmcdonald/Downloads/week5-solution.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.06 12:47:33 INFO  time: evaluated worksheet 'week5-solution.worksheet.sc' in 5.43s
+Dec 06, 2022 12:48:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5240
+2022.12.06 12:48:16 INFO  no build target found for /Users/jackmcdonald/Downloads/week9RecitationSolution.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.06 12:48:16 INFO  time: evaluated worksheet 'week9RecitationSolution.worksheet.sc' in 6.11s
