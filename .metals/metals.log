@@ -1,0 +1,32 @@
+2022.12.05 22:05:30 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/lsp.trace.json or /Users/jackmcdonald/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.12.05 22:05:31 INFO  logging to file /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals.log
+2022.12.05 22:05:31 INFO  Started: Metals version 0.11.9 in workspace '/Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483' for client Visual Studio Code 1.73.1.
+2022.12.05 22:05:33 INFO  time: initialize in 2.27s
+2022.12.05 22:05:36 WARN  Build server is not auto-connectable.
+2022.12.05 22:05:36 WARN  no build tool detected in workspace '/Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.12.05 22:05:36 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/worksheet.scala
+2022.12.05 22:05:41 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/worksheet.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.05 22:05:43 INFO  time: code lens generation in 7.22s
+2022.12.05 22:06:55 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/worksheet.scala
+2022.12.05 22:07:00 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/worksheet.scala
+2022.12.05 22:07:07 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/worksheet.scala
+2022.12.05 22:07:10 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/worksheet.scala
+2022.12.05 22:10:35 INFO  
+2022.12.05 22:10:35 INFO  Template applied in /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/./workspace
+2022.12.05 22:10:35 INFO  
+2022.12.05 22:10:35 INFO  time: ran 'giter8.Giter8' in 6.09s
+2022.12.05 22:10:42 INFO  shutting down Metals
+2022.12.05 22:11:16 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/lsp.trace.json or /Users/jackmcdonald/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.12.05 22:11:17 INFO  logging to file /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals.log
+2022.12.05 22:11:17 INFO  Started: Metals version 0.11.9 in workspace '/Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483' for client Visual Studio Code 1.73.1.
+2022.12.05 22:11:20 INFO  time: initialize in 2.71s
+2022.12.05 22:11:23 WARN  Build server is not auto-connectable.
+2022.12.05 22:11:23 WARN  no build tool detected in workspace '/Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.12.05 22:11:23 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/Main.scala
+Dec 05, 2022 10:11:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2022.12.05 22:11:31 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.05 22:11:37 INFO  time: code lens generation in 14s
+2022.12.05 22:13:42 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/worksheet.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.05 22:13:42 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 13s
+2022.12.05 22:13:51 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 1.97s
