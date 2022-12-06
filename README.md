@@ -26,6 +26,9 @@ TODO: Update the following links and remove this line.
 - Slides (if you use them in your recording): [slides.pdf](slides.pdf) and slide sources (e.g., [slides.pptx](slides.pptx) or [slides.key](slides.key)).
 
 ## Resources
+Higher-order functions in general
+- https://eloquentjavascript.net/05_higher_order.html
+
 Overview of higher-order functions in Scala
 - https://www.youtube.com/watch?v=KwrwkyUq6jY 
 - https://docs.scala-lang.org/tour/higher-order-functions.html 
