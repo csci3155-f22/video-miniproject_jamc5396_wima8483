@@ -30,3 +30,315 @@ WARNING: Unmatched cancel notification for request id 2
 2022.12.05 22:13:42 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/worksheet.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
 2022.12.05 22:13:42 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 13s
 2022.12.05 22:13:51 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 1.97s
+2022.12.05 22:23:15 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.81s
+2022.12.05 22:23:17 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.74s
+2022.12.05 22:23:35 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.7s
+2022.12.05 22:23:39 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.71s
+2022.12.05 22:23:50 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.54s
+2022.12.05 22:24:10 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.7s
+2022.12.05 22:24:15 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.6s
+2022.12.05 22:24:18 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.51s
+2022.12.05 22:25:07 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.68s
+2022.12.05 22:28:07 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.29s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:27: 
+object Int in package scala does not take parameters
+def sum(x: Int, y: Int) = Int {
+                          ^^^
+2022.12.05 22:28:31 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.29s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:27: 
+object Int in package scala does not take parameters
+def sum(x: Int, y: Int) = Int {
+                          ^^^
+2022.12.05 22:28:35 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.15s
+2022.12.05 22:28:48 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.37s
+2022.12.05 22:29:01 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.45s
+2022.12.05 22:29:16 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.47s
+2022.12.05 22:29:26 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.28s
+2022.12.05 22:29:51 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.3s
+2022.12.05 22:30:10 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.38s
+2022.12.05 22:30:10 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.38s
+2022.12.05 22:30:12 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.38s
+2022.12.05 22:30:34 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.36s
+2022.12.05 22:30:45 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.41s
+2022.12.05 22:30:52 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.4s
+2022.12.05 22:31:53 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.44s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:5: Procedure syntax is not supported. Convert procedure `atomicOps` to method by adding `: Unit =`.
+def atomicOps(x: Int, y: Int)(f: Int => Int)
+    ^^^^^^^^^
+2022.12.05 22:32:34 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.39s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:53: 
+Found:    Unit
+Required: Int
+def atomicOps(x: Int, y: Int)(f: Int => Int): Int = {
+                                                    ^
+2022.12.05 22:32:53 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.29s
+2022.12.05 22:33:20 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.53s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:35: 
+Not found: type A
+def atomicOps(x: Int, y: Int)(f: (A, A) => A) = {
+                                  ^
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:38: 
+Not found: type A
+def atomicOps(x: Int, y: Int)(f: (A, A) => A) = {
+                                     ^
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:44: 
+Not found: type A
+def atomicOps(x: Int, y: Int)(f: (A, A) => A) = {
+                                           ^
+2022.12.05 22:33:31 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.2s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:45: polymorphic function types must have a value parameter
+def atomicOps(x: Int, y: Int)(f: [A, A] => A) = {
+                                            ^
+2022.12.05 22:33:40 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.36s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:29: polymorphic function types must have a value parameter
+def atomicOps(f: [A, A] => A) = {
+                            ^
+2022.12.05 22:35:35 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.28s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:29: polymorphic function types must have a value parameter
+def atomicOps(f: [A, A] => A): Int = {
+                            ^
+2022.12.05 22:35:38 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.24s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:29: polymorphic function types must have a value parameter
+def atomicOps(f: [A, A] => A): A = {
+                            ^
+2022.12.05 22:35:41 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.37s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:32: polymorphic function types must have a value parameter
+def atomicOps[A](f: [A, A] => A): A = {
+                               ^
+2022.12.05 22:37:05 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.3s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:39: 
+Found:    Unit
+Required: A
+def atomicOps[A](f: (A, A) => A): A = {
+                                      ^
+2022.12.05 22:37:12 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.34s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:45: 
+Found:    Unit
+Required: A
+def atomicOps[A](f: (x: A, y: A) => A): A = {
+                                            ^
+2022.12.05 22:38:49 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.21s
+2022.12.05 22:38:56 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.43s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:45: expected =>> or =>
+def atomicOps[A](f: (x: A, y: A) => A): [A] = {
+                                            ^
+2022.12.05 22:39:51 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.29s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:45: 
+Found:    Unit
+Required: A
+def atomicOps[A](f: (x: A, y: A) => A): A = {
+                                            ^
+2022.12.05 22:39:55 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.26s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:44: = expected but : found
+def atomicOps[A](f: (x: A, y: A) => A): ret: A = {
+                                           ^
+2022.12.05 22:40:14 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.29s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:45: 
+Found:    Unit
+Required: A
+def atomicOps[A](f: (x: A, y: A) => A): A = {
+                                            ^
+2022.12.05 22:40:19 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.24s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:2:5: 
+Found:    (f : (A, A) => A)
+Required: A
+    f
+    ^
+2022.12.05 22:40:34 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.2s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:2:7: 
+Not found: x
+    f(x, y)
+      ^
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:2:10: 
+Not found: y
+    f(x, y)
+         ^
+2022.12.05 22:40:47 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.22s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:2:5: 
+Found:    (f : (A, A) => A)
+Required: A
+    f
+    ^
+2022.12.05 22:42:20 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.19s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:26: can't mix function type and dependent function type syntaxes
+def atomicOps[A](f: (A, y: A) => A): A = {
+                         ^
+2022.12.05 22:42:32 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.43s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:38: 
+Found:    Unit
+Required: A
+def atomicOps[A](f: (A,A) => A): A = {
+                                     ^
+2022.12.05 22:42:34 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.26s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:39: 
+Found:    Unit
+Required: A
+def atomicOps[A](f: (A, A) => A): A = {
+                                      ^
+2022.12.05 22:42:35 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.24s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:2:5: 
+Found:    (f : (A, A) => A)
+Required: A
+    f
+    ^
+2022.12.05 22:42:41 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.22s
+2022.12.05 22:42:52 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.53s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:2:7: 
+Not found: x
+    f(x, y)
+      ^
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:2:10: 
+Not found: y
+    f(x, y)
+         ^
+2022.12.05 22:43:06 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.19s
+2022.12.05 22:43:11 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.6s
+2022.12.05 22:43:20 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.43s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:4:23: ; expected but => found
+atomicOps[Int]{(1, 1) => 1+1}
+                      ^^
+2022.12.05 22:44:26 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.39s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:4:23: ) expected but => found
+atomicOps[Int]((1, 1) => 1+1)
+                      ^^
+2022.12.05 22:44:35 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.31s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:4:22: ; expected but => found
+atomicOps[Int](1, 1) => 1+1)
+                     ^^
+2022.12.05 22:44:43 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.27s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:4:23: ) expected but => found
+atomicOps[Int]((1, 1) => 1+1)
+                      ^^
+2022.12.05 22:44:46 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.38s
+2022.12.05 22:44:57 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.48s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:19: 
+Not found: type A
+def atomicOps(f: (A, A) => A) = {
+                  ^
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:22: 
+Not found: type A
+def atomicOps(f: (A, A) => A) = {
+                     ^
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:28: 
+Not found: type A
+def atomicOps(f: (A, A) => A) = {
+                           ^
+2022.12.05 22:46:43 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.41s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:1:22: 
+Not found: type A
+def atomicOps(f:  => A) = {
+                     ^
+2022.12.05 22:46:49 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.23s
+2022.12.05 22:46:54 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.56s
+2022.12.05 23:12:03 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 1.13s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:4:18: ) expected but => found
+atomicOps((1, 1) => 1 + 1)
+                 ^^
+2022.12.05 23:12:50 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.39s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:4:10: 
+Found:    Unit
+Required: (Int, Int) => Int
+atomicOps{  }
+         ^^^^
+2022.12.05 23:13:07 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.27s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:2:5: 
+Found:    (f : (Int, Int) => Int)
+Required: Int
+    f
+    ^
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:4:10: 
+Found:    Unit
+Required: Int
+atomicOps{  }
+         ^^^^
+2022.12.05 23:13:38 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.51s
+[31merror[39m: 
+worksheet.worksheet.sc:8 (mdoc generated code) 
+ Declaration of method atomicOps not allowed here: only classes can have declared but undefined members
+      def atomicOps(x: Int, y: Int)(f: (Int, Int) => Int): Int
+
+
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:3:1: 
+Not found: atomicOps
+atomicOps(1, 1){ (x, y) => x + y }
+^^^^^^^^^
+2022.12.05 23:14:39 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.3s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:4:17: 
+Not found: x
+atomicOps(1, 1){x + y}
+                ^
+2022.12.05 23:18:38 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.55s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:4:17: 
+Not found: x
+atomicOps(1, 1){x + y}
+                ^
+2022.12.05 23:18:38 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.29s
+Dec 05, 2022 11:18:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2502
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:5:5: Procedure syntax is not supported. Convert procedure `sum` to method by adding `: Unit =`.
+def sum(x: Int, y: Int)
+    ^^^
+2022.12.05 23:19:11 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.35s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:6:5: illegal start of declaration (possible cause: missing `=' in front of current method body)
+    x + y
+    ^
+2022.12.05 23:19:26 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.3s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:9:17: 
+too many arguments for method atomicOps in class MdocApp: (x: Int, y: Int)(f: (Int, Int) => Int): Int
+atomicOps(1, 1, sum)
+                ^^^
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:10:5: 
+Double definition:
+def sum(x: Int, y: Int): Int in class MdocApp at line 12 and
+def sum(x: Int, y: Int): Int in class MdocApp at line 22
+have the same type after erasure.
+
+Consider adding a @targetName annotation to one of the conflicting definitions
+for disambiguation.
+def sum(x: Int, y: Int): Int = {
+    ^
+2022.12.05 23:19:50 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.28s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:9:5: 
+Double definition:
+def sum(x: Int, y: Int): Int in class MdocApp at line 12 and
+def sum(x: Int, y: Int): Int in class MdocApp at line 17
+have the same type after erasure.
+
+Consider adding a @targetName annotation to one of the conflicting definitions
+for disambiguation.
+def sum(x: Int, y: Int): Int = {
+    ^
+2022.12.05 23:22:20 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.29s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:10:5: 
+Double definition:
+def sum(x: Int, y: Int): Int in class MdocApp at line 17 and
+def sum(x: Int, y: Int): Int in class MdocApp at line 22
+have the same type after erasure.
+
+Consider adding a @targetName annotation to one of the conflicting definitions
+for disambiguation.
+def sum(x: Int, y: Int): Int = {
+    ^
+2022.12.05 23:22:48 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.22s
+2022.12.05 23:23:17 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.62s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:7:1: 
+missing argument for parameter x of method atomicOps in class MdocApp: (x: Int, y: Int, f: (Int, Int) => Int): Int
+atomicOps()
+^^^^^^^^^^^
+2022.12.05 23:23:35 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.23s
+[31merror[39m: workspace/src/main/scala/worksheet.worksheet.sc:7:1: 
+missing argument for parameter y of method atomicOps in class MdocApp: (x: Int, y: Int, f: (Int, Int) => Int): Int
+atomicOps(???)
+^^^^^^^^^^^^^^
+2022.12.05 23:23:40 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.29s
+2022.12.05 23:24:00 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.74s
+2022.12.05 23:24:30 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.93s
+2022.12.05 23:25:13 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.59s
+2022.12.05 23:25:28 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.66s
+2022.12.05 23:41:52 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.88s
+Dec 05, 2022 11:42:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3378
+2022.12.05 23:43:59 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.97s
+2022.12.05 23:44:46 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.65s
+2022.12.05 23:48:05 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.8s
+2022.12.05 23:48:31 INFO  time: evaluated worksheet 'worksheet.worksheet.sc' in 0.6s
