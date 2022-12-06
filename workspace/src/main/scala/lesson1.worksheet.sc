@@ -35,13 +35,13 @@ that can occur, thus, the introduction of a higher-order function
 atomicOps that takes in a function that can be modified based on
 which operation on the two integers we would like to perform.
 */
-def atomicOps(x: Int, y: Int, f: (Int, Int) => Int) = {
+def binOps(x: Int, y: Int, f: (Int, Int) => Int) = {
     f(x, y)
 }
 
 //Our code is now achieving the same result and is reduced significantly
 
-atomicOps(2, 2, (x, y) => x + y) //sum
-atomicOps(2, 2, (x, y) => x * y) //product
-atomicOps(2, 2, (x, y) => x / y) //dividend
-atomicOps(2, 2, (x, y) => x - y) //difference
+binOps(2, 2, (x, y) => x + y) //sum
+binOps(2, 2, (x, y) => x * y) //product
+binOps(2, 2, (x, y) => x / y) //dividend
+binOps(2, 2, (x, y) => x - y) //difference
