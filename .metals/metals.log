@@ -807,3 +807,1249 @@ Dec 06, 2022 12:48:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancella
 WARNING: Unmatched cancel notification for request id 5240
 2022.12.06 12:48:16 INFO  no build target found for /Users/jackmcdonald/Downloads/week9RecitationSolution.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
 2022.12.06 12:48:16 INFO  time: evaluated worksheet 'week9RecitationSolution.worksheet.sc' in 6.11s
+2022.12.06 13:02:14 INFO  shutting down Metals
+2022.12.06 13:02:14 WARN  Error requesting Scala script importorg.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+2022.12.06 13:08:51 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/lsp.trace.json or /Users/jackmcdonald/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.12.06 13:08:52 INFO  logging to file /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals.log
+2022.12.06 13:08:52 INFO  Started: Metals version 0.11.9 in workspace '/Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483' for client Visual Studio Code 1.73.1.
+2022.12.06 13:08:54 INFO  time: initialize in 1.82s
+2022.12.06 13:08:57 WARN  Build server is not auto-connectable.
+2022.12.06 13:08:57 WARN  no build tool detected in workspace '/Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.12.06 13:09:05 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/fold.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.06 13:09:09 INFO  time: code lens generation in 12s
+2022.12.06 13:09:11 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/fold.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.06 13:09:11 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 14s
+2022.12.06 13:14:11 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/lesson1.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.06 13:14:11 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 6.94s
+2022.12.06 17:20:25 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/Main.scala
+2022.12.06 17:25:14 INFO  shutting down Metals
+2022.12.06 17:27:08 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/lsp.trace.json or /Users/jackmcdonald/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.12.06 17:27:09 INFO  logging to file /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals.log
+2022.12.06 17:27:09 INFO  Started: Metals version 0.11.9 in workspace '/Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483' for client Visual Studio Code 1.73.1.
+2022.12.06 17:27:11 WARN  resetting database: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals.h2.db
+2022.12.06 17:27:15 ERROR org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database (jdbc:h2:file:/Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals;AUTO_SERVER=TRUE) for user 'sa': Error opening database: "Could not save properties /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals.lock.db" [8000-214]
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08000
+Error Code : 8000
+Message    : Error opening database: "Could not save properties /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals.lock.db" [8000-214]
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:211)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:81)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:864)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Error opening database: "Could not save properties /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals.lock.db" [8000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:504)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.store.FileLock.getExceptionFatal(FileLock.java:429)
+	at org.h2.store.FileLock.save(FileLock.java:195)
+	at org.h2.store.FileLock.lockFile(FileLock.java:333)
+	at org.h2.store.FileLock.lock(FileLock.java:110)
+	at org.h2.engine.Database.<init>(Database.java:315)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:211)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:81)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:864)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: No space left on device
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.nio.channels.Channels.writeFully(Channels.java:97)
+	at java.nio.channels.Channels$1.write(Channels.java:172)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at java.util.Properties.store0(Properties.java:947)
+	at java.util.Properties.store(Properties.java:921)
+	at org.h2.store.FileLock.save(FileLock.java:187)
+	at org.h2.store.FileLock.lockFile(FileLock.java:333)
+	at org.h2.store.FileLock.lock(FileLock.java:110)
+	at org.h2.engine.Database.<init>(Database.java:315)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:211)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:81)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:864)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+2022.12.06 17:27:19 WARN  resetting database: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals.h2.db
+2022.12.06 17:27:23 ERROR unable to setup persistent H2 database with AUTO_SERVER=false, falling back to in-memory database. This means you may be redundantly asked to execute 'Import build', even if it's not needed. Also, code navigation will not work for existing files in the .metals/readonly/ directory. To fix this problem, make sure you only have one running Metals server in the directory '/Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483'.org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database (jdbc:h2:file:/Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals;AUTO_SERVER=TRUE) for user 'sa': Error opening database: "Could not save properties /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals.lock.db" [8000-214]
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08000
+Error Code : 8000
+Message    : Error opening database: "Could not save properties /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals.lock.db" [8000-214]
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:211)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryNoAutoServer(Tables.scala:98)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:92)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:864)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Error opening database: "Could not save properties /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals.lock.db" [8000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:504)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.store.FileLock.getExceptionFatal(FileLock.java:429)
+	at org.h2.store.FileLock.save(FileLock.java:195)
+	at org.h2.store.FileLock.lockFile(FileLock.java:333)
+	at org.h2.store.FileLock.lock(FileLock.java:110)
+	at org.h2.engine.Database.<init>(Database.java:315)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:211)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryNoAutoServer(Tables.scala:98)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:92)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:864)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: No space left on device
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.nio.channels.Channels.writeFully(Channels.java:97)
+	at java.nio.channels.Channels$1.write(Channels.java:172)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at java.util.Properties.store0(Properties.java:947)
+	at java.util.Properties.store(Properties.java:921)
+	at org.h2.store.FileLock.save(FileLock.java:187)
+	at org.h2.store.FileLock.lockFile(FileLock.java:333)
+	at org.h2.store.FileLock.lock(FileLock.java:110)
+	at org.h2.engine.Database.<init>(Database.java:315)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146)
+	at org.flywaydb.core.Flyway.clean(Flyway.java:211)
+	at scala.meta.internal.metals.Tables.migrateOrRestart(Tables.scala:156)
+	at scala.meta.internal.metals.Tables.tryUrl(Tables.scala:144)
+	at scala.meta.internal.metals.Tables.persistentConnection(Tables.scala:138)
+	at scala.meta.internal.metals.Tables.tryNoAutoServer(Tables.scala:98)
+	at scala.meta.internal.metals.Tables.tryAutoServer(Tables.scala:92)
+	at scala.meta.internal.metals.Tables.connect(Tables.scala:48)
+	at scala.meta.internal.metals.Tables.connection(Tables.scala:74)
+	at scala.meta.internal.metals.Tables.$anonfun$fingerprints$1(Tables.scala:39)
+	at scala.meta.internal.metals.Fingerprints.load(Fingerprints.scala:52)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:864)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+2022.12.06 17:27:24 INFO  time: initialize in 14s
+2022.12.06 17:27:26 WARN  Build server is not auto-connectable.
+2022.12.06 17:27:26 WARN  no build tool detected in workspace '/Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.12.06 17:27:26 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/Main.scala
+2022.12.06 17:27:35 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/fold.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.06 17:27:40 INFO  time: code lens generation in 12s
+2022.12.06 17:27:42 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/fold.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.06 17:27:42 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 15s
+2022.12.06 17:27:57 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/lesson1.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.06 17:27:57 INFO  time: evaluated worksheet 'lesson1.worksheet.sc' in 4.41s
+2022.12.06 17:28:41 ERROR Cannot create filejava.io.IOException: No space left on device
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.nio.channels.Channels.writeFully(Channels.java:97)
+	at java.nio.channels.Channels$1.write(Channels.java:172)
+	at java.nio.file.Files.write(Files.java:3430)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.writeText(MetalsEnrichments.scala:526)
+	at scala.meta.internal.metals.newScalaFile.NewFileProvider.$anonfun$createFileAndWriteText$1(NewFileProvider.scala:258)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+Dec 06, 2022 5:28:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.io.IOException: No space left on device
+java.util.concurrent.CompletionException: java.io.IOException: No space left on device
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: No space left on device
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at java.base/java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.base/java.nio.channels.Channels.writeFully(Channels.java:97)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:172)
+	at java.base/java.nio.file.Files.write(Files.java:3430)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.writeText(MetalsEnrichments.scala:526)
+	at scala.meta.internal.metals.newScalaFile.NewFileProvider.$anonfun$createFileAndWriteText$1(NewFileProvider.scala:258)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.12.06 17:31:12 ERROR Cannot create filejava.io.IOException: No space left on device
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.nio.channels.Channels.writeFully(Channels.java:97)
+	at java.nio.channels.Channels$1.write(Channels.java:172)
+	at java.nio.file.Files.write(Files.java:3430)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.writeText(MetalsEnrichments.scala:526)
+	at scala.meta.internal.metals.newScalaFile.NewFileProvider.$anonfun$createFileAndWriteText$1(NewFileProvider.scala:258)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+Dec 06, 2022 5:31:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.io.IOException: No space left on device
+java.util.concurrent.CompletionException: java.io.IOException: No space left on device
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: No space left on device
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at java.base/java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.base/java.nio.channels.Channels.writeFully(Channels.java:97)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:172)
+	at java.base/java.nio.file.Files.write(Files.java:3430)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.writeText(MetalsEnrichments.scala:526)
+	at scala.meta.internal.metals.newScalaFile.NewFileProvider.$anonfun$createFileAndWriteText$1(NewFileProvider.scala:258)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.12.06 17:31:35 INFO  shutting down Metals
+2022.12.06 17:32:28 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/lsp.trace.json or /Users/jackmcdonald/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.12.06 17:32:30 INFO  logging to file /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals.log
+2022.12.06 17:32:30 INFO  Started: Metals version 0.11.9 in workspace '/Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483' for client Visual Studio Code 1.73.1.
+2022.12.06 17:32:35 INFO  time: initialize in 4.76s
+2022.12.06 17:32:39 WARN  Build server is not auto-connectable.
+2022.12.06 17:32:39 WARN  no build tool detected in workspace '/Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.12.06 17:33:47 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/ast.scala
+2022.12.06 17:33:53 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/ast.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.06 17:33:57 INFO  time: code lens generation in 9.24s
+2022.12.06 17:34:38 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/ast.scala
+2022.12.06 17:34:48 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/ast.scala
+2022.12.06 17:34:51 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/ast.scala
+2022.12.06 17:34:54 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/Main.scala
+2022.12.06 17:35:16 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/Main.scala
+2022.12.06 17:35:17 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/Main.scala
+2022.12.06 17:35:30 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/test/scala/MySuite.scala
+2022.12.06 17:36:05 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/Main.scala
+2022.12.06 17:36:09 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/Main.scala
+2022.12.06 17:36:12 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/Main.scala
+2022.12.06 17:38:18 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/Main.scala
+2022.12.06 17:38:32 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/Main.scala
+2022.12.06 17:41:42 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/fold.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.06 17:41:42 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 14s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:1:8: 
+Not found: ast
+import ast.scala
+       ^^^
+2022.12.06 17:41:43 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.86s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:15:9: ; expected but = found
+t: Tree = Node(Empty, 1, Empty)
+        ^
+2022.12.06 17:42:07 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.85s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:1:8: 
+Not found: ast
+import ast.scala
+       ^^^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:15:4: 
+Not found: type Tree
+t: Tree; Node(Empty, 1, Empty)
+   ^^^^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:15:1: 
+Not found: t
+t: Tree; Node(Empty, 1, Empty)
+^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:15:10: 
+Not found: Node
+t: Tree; Node(Empty, 1, Empty)
+         ^^^^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:15:15: 
+Not found: Empty
+t: Tree; Node(Empty, 1, Empty)
+              ^^^^^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:15:25: 
+Not found: Empty
+t: Tree; Node(Empty, 1, Empty)
+                        ^^^^^
+2022.12.06 17:42:18 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.47s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:15:10: illegal start of definition =
+t: Tree; = Node(Empty, 1, Empty)
+         ^
+2022.12.06 17:42:20 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.78s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:15:9: ; expected but = found
+t: Tree = Node(Empty, 1, Empty)
+        ^
+2022.12.06 17:42:22 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.52s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:15:9: ; expected but = found
+Tree: t = Node(Empty, 1, Empty)
+        ^
+2022.12.06 17:43:34 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 2.12s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:1: 
+Empty is already defined as object Empty
+case object Empty extends List
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:1:8: 
+Not found: ast
+import ast.scala
+       ^^^
+2022.12.06 17:45:34 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.67s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:1:8: 
+Not found: ast
+import ast.scala
+       ^^^
+2022.12.06 17:45:56 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.33s
+Dec 06, 2022 5:46:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 103,
+      "uri": "file:///Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/fold.worksheet.sc"
+    },
+    "contentChanges": [
+      {
+        "text": "\nval l \u003d List(1, 2, 3)\n\n/*\nAs we can see, the difference between foldLeft and foldRight in the\nmost simplest terms is the order of evaluation of the list being folded\non. FoldLeft will read the list to be folded on from left to right, and\nfoldRight will read the list from right to left\n*/\n\nval fl \u003d l.foldLeft(List.empty){ (acc, i) \u003d\u003e i :: acc }\nval fr \u003d l.foldRight(List.empty){ (acc, i) \u003d\u003e acc :: i }\n\nsealed trait Tree\ncase object Empty extends Tree\ncase class Node(l:Tree, d:Int, r:Tree) extends Tree\n\nNode(Empty, 1, Empty)"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: -1 is not a valid offset, allowed [0..528]
+	at scala.meta.internal.inputs.InternalInput.offsetToLine(InternalInput.scala:48)
+	at scala.meta.internal.inputs.InternalInput.offsetToLine$(InternalInput.scala:42)
+	at scala.meta.inputs.Input$VirtualFile.offsetToLine(Input.scala:80)
+	at scala.meta.inputs.Position$Range.startLine(Position.scala:37)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionMetaPosition.toLsp(CommonMtagsEnrichments.scala:95)
+	at scala.meta.internal.parsing.TokenEditDistance$Diff.$anonfun$toRevised$1(TokenEditDistance.scala:227)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.TokenEditDistance$Diff.toRevised(TokenEditDistance.scala:149)
+	at scala.meta.internal.metals.Diagnostics.toFreshDiagnostic(Diagnostics.scala:263)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnostics$3(Diagnostics.scala:232)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnostics$3$adapted(Diagnostics.scala:231)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:575)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:573)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:231)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1244)
+	... 15 more
+
+Dec 06, 2022 5:46:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 104,
+      "uri": "file:///Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/fold.worksheet.sc"
+    },
+    "contentChanges": [
+      {
+        "text": "val l \u003d List(1, 2, 3)\n\n/*\nAs we can see, the difference between foldLeft and foldRight in the\nmost simplest terms is the order of evaluation of the list being folded\non. FoldLeft will read the list to be folded on from left to right, and\nfoldRight will read the list from right to left\n*/\n\nval fl \u003d l.foldLeft(List.empty){ (acc, i) \u003d\u003e i :: acc }\nval fr \u003d l.foldRight(List.empty){ (acc, i) \u003d\u003e acc :: i }\n\nsealed trait Tree\ncase object Empty extends Tree\ncase class Node(l:Tree, d:Int, r:Tree) extends Tree\n\nNode(Empty, 1, Empty)"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: -1 is not a valid offset, allowed [0..527]
+	at scala.meta.internal.inputs.InternalInput.offsetToLine(InternalInput.scala:48)
+	at scala.meta.internal.inputs.InternalInput.offsetToLine$(InternalInput.scala:42)
+	at scala.meta.inputs.Input$VirtualFile.offsetToLine(Input.scala:80)
+	at scala.meta.inputs.Position$Range.startLine(Position.scala:37)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionMetaPosition.toLsp(CommonMtagsEnrichments.scala:95)
+	at scala.meta.internal.parsing.TokenEditDistance$Diff.$anonfun$toRevised$1(TokenEditDistance.scala:227)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.TokenEditDistance$Diff.toRevised(TokenEditDistance.scala:149)
+	at scala.meta.internal.metals.Diagnostics.toFreshDiagnostic(Diagnostics.scala:263)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnostics$3(Diagnostics.scala:232)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnostics$3$adapted(Diagnostics.scala:231)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:575)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:573)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:231)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1244)
+	... 15 more
+
+2022.12.06 17:46:04 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 1.51s
+Dec 06, 2022 5:46:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 646
+2022.12.06 17:46:18 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.96s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:17:35: 
+Not found: empty
+val t: Tree = Node(Node(Empty, 2, empty), 1, Empty)
+                                  ^^^^^
+2022.12.06 17:46:36 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.29s
+2022.12.06 17:46:42 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.7s
+Dec 06, 2022 5:47:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 766
+2022.12.06 17:47:21 WARN  no build target for: /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/Main.scala
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:18:1: 
+Empty is already defined as object Empty
+case object Empty extends List
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022.12.06 17:47:28 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.31s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:14:32: ; expected but extends found
+case object Empty extends Tree extends List
+                               ^^^^^^^
+2022.12.06 17:47:35 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.31s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:17:32: ; expected but extends found
+case object Empty extends List extends Tree
+                               ^^^^^^^
+2022.12.06 17:47:45 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.45s
+Dec 06, 2022 5:50:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 865
+2022.12.06 17:50:28 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 1.18s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:32: 
+Found:    MdocApp.this.Cons
+Required: Int
+val t: Tree = Node(Node(Empty, Cons(1, Empty), Empty), 1, Empty)
+                               ^^^^^^^^^^^^^^
+2022.12.06 17:51:11 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.37s
+Dec 06, 2022 5:51:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 954
+Dec 06, 2022 5:51:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 955
+Dec 06, 2022 5:51:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 956
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:32: 
+Found:    MdocApp.this.Cons
+Required: Int
+val t: Tree = Node(Node(Empty, Cons(1, Empty), Empty), 1, Empty)
+                               ^^^^^^^^^^^^^^
+2022.12.06 17:51:38 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.43s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:32: 
+Found:    MdocApp.this.Cons
+Required: Int
+val t: Tree = Node(Node(Empty, Cons(1, Empty), Empty), 1, Empty)
+                               ^^^^^^^^^^^^^^
+2022.12.06 17:52:00 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.26s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:32: 
+Found:    MdocApp.this.Cons
+Required: Int
+val t: Tree = Node(Node(Empty, Cons(1, Empty), Empty), 1, Empty)
+                               ^^^^^^^^^^^^^^
+2022.12.06 17:52:20 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.31s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:25: 
+Found:    MdocApp.this.Empty.type
+Required: MdocApp.this.Tree
+val t: Tree = Node(Node(Empty, Cons(1, Empty), Empty), 1, Empty)
+                        ^^^^^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:32: 
+Found:    MdocApp.this.Cons
+Required: Int
+val t: Tree = Node(Node(Empty, Cons(1, Empty), Empty), 1, Empty)
+                               ^^^^^^^^^^^^^^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:48: 
+Found:    MdocApp.this.Empty.type
+Required: MdocApp.this.Tree
+val t: Tree = Node(Node(Empty, Cons(1, Empty), Empty), 1, Empty)
+                                               ^^^^^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:59: 
+Found:    MdocApp.this.Empty.type
+Required: MdocApp.this.Tree
+val t: Tree = Node(Node(Empty, Cons(1, Empty), Empty), 1, Empty)
+                                                          ^^^^^
+2022.12.06 17:52:27 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.29s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:32: 
+Found:    MdocApp.this.Cons
+Required: Int
+val t: Tree = Node(Node(Empty, Cons(1, Empty), Empty), 1, Empty)
+                               ^^^^^^^^^^^^^^
+2022.12.06 17:52:35 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.3s
+2022.12.06 17:52:40 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.74s
+Exception in thread "pool-8-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:21:27: illegal start of simple expression
+val t: Tree = Node(Empty, , Empty)
+                          ^
+2022.12.06 17:53:23 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.43s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:32: 
+Found:    (2 : Int)
+Required: MdocApp.this.List
+val t: Tree = Node(Node(Empty, 2, Empty), 1, Empty)
+                               ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:43: 
+Found:    (1 : Int)
+Required: MdocApp.this.List
+val t: Tree = Node(Node(Empty, 2, Empty), 1, Empty)
+                                          ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:21:5: 
+Double definition:
+val t: MdocApp.this.Tree in class MdocApp at line 34 and
+val t: MdocApp.this.Tree in class MdocApp at line 38
+
+val t: Tree = Node(Empty, Cons(1, Cons(2, Cons(3, Empty))), Empty)
+    ^
+2022.12.06 17:53:54 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.44s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:32: 
+Found:    (2 : Int)
+Required: MdocApp.this.List
+val t: Tree = Node(Node(Empty, 2, Empty), 1, Empty)
+                               ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:43: 
+Found:    (1 : Int)
+Required: MdocApp.this.List
+val t: Tree = Node(Node(Empty, 2, Empty), 1, Empty)
+                                          ^
+2022.12.06 17:54:02 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.23s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:32: 
+Found:    (2 : Int)
+Required: MdocApp.this.List
+val t: Tree = Node(Node(Empty, 2, Empty), 1, Empty)
+                               ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:43: 
+Found:    (1 : Int)
+Required: MdocApp.this.List
+val t: Tree = Node(Node(Empty, 2, Empty), 1, Empty)
+                                          ^
+2022.12.06 17:54:07 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.32s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:56: 
+Found:    (1 : Int)
+Required: MdocApp.this.List
+val t: Tree = Node(Node(Empty, Cons(2, Empty), Empty), 1, Empty)
+                                                       ^
+2022.12.06 17:54:37 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.31s
+2022.12.06 17:54:43 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.66s
+2022.12.06 17:56:03 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.69s
+2022.12.06 18:00:11 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.8s
+2022.12.06 18:00:23 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.89s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:14:27: 
+Missing type parameter for MdocApp.this.List
+case class Node(l:Tree, d:List, r:Tree) extends Tree
+                          ^^^^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:17:27: 
+Missing type parameter for MdocApp.this.List
+case object Empty extends List with Tree
+                          ^^^^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:18:31: 
+Missing type parameter for MdocApp.this.List
+case class Cons(h: Int, tail: List) extends List
+                              ^^^^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:18:45: 
+Missing type parameter for MdocApp.this.List
+case class Cons(h: Int, tail: List) extends List
+                                            ^^^^
+2022.12.06 18:02:26 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.97s
+Dec 06, 2022 6:02:41 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1619)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver$$anonfun$1(Trees.scala:1623)
+	at scala.collection.LinearSeqOps.foldLeft(LinearSeq.scala:183)
+	at scala.collection.LinearSeqOps.foldLeft$(LinearSeq.scala:179)
+	at scala.collection.immutable.List.foldLeft(List.scala:79)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+Dec 06, 2022 6:02:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1596)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+Dec 06, 2022 6:02:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1619)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver$$anonfun$1(Trees.scala:1623)
+	at scala.collection.LinearSeqOps.foldLeft(LinearSeq.scala:183)
+	at scala.collection.LinearSeqOps.foldLeft$(LinearSeq.scala:179)
+	at scala.collection.immutable.List.foldLeft(List.scala:79)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+Dec 06, 2022 6:02:49 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1619)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver$$anonfun$1(Trees.scala:1623)
+	at scala.collection.LinearSeqOps.foldLeft(LinearSeq.scala:183)
+	at scala.collection.LinearSeqOps.foldLeft$(LinearSeq.scala:179)
+	at scala.collection.immutable.List.foldLeft(List.scala:79)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:14:27: 
+Missing type parameter for MdocApp.this.List
+case class Node(l:Tree, d:List, r:Tree) extends Tree
+                          ^^^^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:18:50: 
+Missing type parameter for MdocApp.this.List
+case class Cons(h: Int, tail: List[Int]) extends List
+                                                 ^^^^
+2022.12.06 18:02:53 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.41s
+Dec 06, 2022 6:03:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.12.06 18:03:11 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.88s
+2022.12.06 18:03:43 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.8s
+2022.12.06 18:03:54 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.72s
+Dec 06, 2022 6:04:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1828
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:23:21: 
+Not found: type A
+def myFoldLeft(acc: A)(t: Tree)(op: (A, A) => A): A = {
+                    ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:23:38: 
+Not found: type A
+def myFoldLeft(acc: A)(t: Tree)(op: (A, A) => A): A = {
+                                     ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:23:41: 
+Not found: type A
+def myFoldLeft(acc: A)(t: Tree)(op: (A, A) => A): A = {
+                                        ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:23:47: 
+Not found: type A
+def myFoldLeft(acc: A)(t: Tree)(op: (A, A) => A): A = {
+                                              ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:23:51: 
+Not found: type A
+def myFoldLeft(acc: A)(t: Tree)(op: (A, A) => A): A = {
+                                                  ^
+2022.12.06 18:05:32 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.3s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:23:21: 
+Not found: type A
+def myFoldLeft(acc: A)(t: Tree)(op: (A, A) => A): A = t match {
+                    ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:23:38: 
+Not found: type A
+def myFoldLeft(acc: A)(t: Tree)(op: (A, A) => A): A = t match {
+                                     ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:23:41: 
+Not found: type A
+def myFoldLeft(acc: A)(t: Tree)(op: (A, A) => A): A = t match {
+                                        ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:23:47: 
+Not found: type A
+def myFoldLeft(acc: A)(t: Tree)(op: (A, A) => A): A = t match {
+                                              ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:23:51: 
+Not found: type A
+def myFoldLeft(acc: A)(t: Tree)(op: (A, A) => A): A = t match {
+                                                  ^
+2022.12.06 18:05:43 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.33s
+2022.12.06 18:06:10 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 1.01s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:25:24: 
+Found:    Unit
+Required: A
+    case Node(l, d, r) => 
+                       ^^
+2022.12.06 18:07:36 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.91s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:25:24: 
+Found:    Unit
+Required: A
+    case Node(l, d, r) => 
+                       ^^
+2022.12.06 18:07:45 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.51s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:26:26: 
+Found:    (t : MdocApp.this.Tree)
+Required: A
+        val res = f(acc, t)
+                         ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:27:6: 
+Found:    Unit
+Required: A
+    }
+     ^
+2022.12.06 18:08:25 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.42s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:26:26: 
+Found:    (d : MdocApp.this.List[Int])
+Required: A
+        val res = f(acc, d)
+                         ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:27:6: 
+Found:    Unit
+Required: A
+    }
+     ^
+2022.12.06 18:08:38 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.32s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:27:6: 
+Found:    Unit
+Required: A
+    }
+     ^
+2022.12.06 18:09:03 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.35s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:29:28: 
+Found:    Unit
+Required: A
+    case Node(Empty, d, r) => 
+                           ^^
+2022.12.06 18:16:35 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.48s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:27:25: 
+Found:    A
+Required: MdocApp.this.Tree
+        myFoldLeft(res)(myFoldLeft(res)(r)(f))(f)
+                        ^^^^^^^^^^^^^^^^^^^^^
+2022.12.06 18:18:18 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.54s
+2022.12.06 18:18:59 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 1.01s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:31:36: 
+None of the overloaded alternatives of method + in class Int with types
+ (x: Double): Double
+ (x: Float): Float
+ (x: Long): Long
+ (x: Int): Int
+ (x: Char): Int
+ (x: Short): Int
+ (x: Byte): Int
+ (x: String): String
+match arguments ((d : MdocApp.this.List[Int]))
+myFoldLeft[Int](0)(t){ (acc, d) => acc + d }
+                                   ^^^^^
+2022.12.06 18:20:16 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.35s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:14:18: case classes must have a parameter list; try 'case class Empty()' or 'case object Empty'
+case class Empty extends Tree
+                 ^^^^^^^
+2022.12.06 18:20:45 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.33s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:17:32: 
+Not found: Cons
+val t: Tree = Node(Node(Empty, Cons(2, Empty), Empty), Cons(1, Empty), Empty)
+                               ^^^^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:17:56: 
+Not found: Cons
+val t: Tree = Node(Node(Empty, Cons(2, Empty), Empty), Cons(1, Empty), Empty)
+                                                       ^^^^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:28:36: 
+None of the overloaded alternatives of method + in class Int with types
+ (x: Double): Double
+ (x: Float): Float
+ (x: Long): Long
+ (x: Int): Int
+ (x: Char): Int
+ (x: Short): Int
+ (x: Byte): Int
+ (x: String): String
+match arguments ((d : List[Int]))
+myFoldLeft[Int](0)(t){ (acc, d) => acc + d }
+                                   ^^^^^
+2022.12.06 18:21:08 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.37s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:17:32: 
+Found:    (2 : Int)
+Required: List[Int]
+val t: Tree = Node(Node(Empty, 2, Empty), 1, Empty)
+                               ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:17:43: 
+Found:    (1 : Int)
+Required: List[Int]
+val t: Tree = Node(Node(Empty, 2, Empty), 1, Empty)
+                                          ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:28:36: 
+None of the overloaded alternatives of method + in class Int with types
+ (x: Double): Double
+ (x: Float): Float
+ (x: Long): Long
+ (x: Int): Int
+ (x: Char): Int
+ (x: Short): Int
+ (x: Byte): Int
+ (x: String): String
+match arguments ((d : List[Int]))
+myFoldLeft[Int](0)(t){ (acc, d) => acc + d }
+                                   ^^^^^
+2022.12.06 18:21:16 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.34s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:23:26: 
+Found:    (d : Int)
+Required: List[Int]
+        val res = f(acc, d)
+                         ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:28:36: 
+None of the overloaded alternatives of method + in class Int with types
+ (x: Double): Double
+ (x: Float): Float
+ (x: Long): Long
+ (x: Int): Int
+ (x: Char): Int
+ (x: Short): Int
+ (x: Byte): Int
+ (x: String): String
+match arguments ((d : List[Int]))
+myFoldLeft[Int](0)(t){ (acc, d) => acc + d }
+                                   ^^^^^
+2022.12.06 18:21:27 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.24s
+2022.12.06 18:21:43 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.78s
+Dec 06, 2022 6:23:40 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1576)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1574)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:39: 
+Not found: type A
+def myFoldLeft(acc: Int)(t: Tree)(f: (A, Int) => A): A = t match {
+                                      ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:50: 
+Not found: type A
+def myFoldLeft(acc: Int)(t: Tree)(f: (A, Int) => A): A = t match {
+                                                 ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:54: 
+Not found: type A
+def myFoldLeft(acc: Int)(t: Tree)(f: (A, Int) => A): A = t match {
+                                                     ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:28:1: 
+method myFoldLeft in class MdocApp does not take type parameters
+myFoldLeft[Int](0)(t){ (acc, d) => acc + d }
+^^^^^^^^^^^^^^^
+2022.12.06 18:23:43 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.43s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:39: 
+Not found: type A
+def myFoldLeft(acc: Int)(t: Tree)(f: (A, Int) => A): A = t match {
+                                      ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:50: 
+Not found: type A
+def myFoldLeft(acc: Int)(t: Tree)(f: (A, Int) => A): A = t match {
+                                                 ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:54: 
+Not found: type A
+def myFoldLeft(acc: Int)(t: Tree)(f: (A, Int) => A): A = t match {
+                                                     ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:28:1: 
+method myFoldLeft in class MdocApp does not take type parameters
+myFoldLeft[Int](0)(t){ (acc, d) => acc + d }
+^^^^^^^^^^^^^^^
+2022.12.06 18:23:43 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.4s
+Dec 06, 2022 6:23:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2994
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:39: 
+Not found: type A
+def myFoldLeft(acc: Int)(t: Tree)(f: (A, Int) => A): Int = t match {
+                                      ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:50: 
+Not found: type A
+def myFoldLeft(acc: Int)(t: Tree)(f: (A, Int) => A): Int = t match {
+                                                 ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:28:1: 
+method myFoldLeft in class MdocApp does not take type parameters
+myFoldLeft[Int](0)(t){ (acc, d) => acc + d }
+^^^^^^^^^^^^^^^
+2022.12.06 18:23:46 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.32s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:20:39: 
+Not found: type A
+def myFoldLeft(acc: Int)(t: Tree)(f: (A, Int) => Int): Int = t match {
+                                      ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:28:1: 
+method myFoldLeft in class MdocApp does not take type parameters
+myFoldLeft[Int](0)(t){ (acc, d) => acc + d }
+^^^^^^^^^^^^^^^
+2022.12.06 18:23:49 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.24s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:28:1: 
+method myFoldLeft in class MdocApp does not take type parameters
+myFoldLeft[Int](0)(t){ (acc, d) => acc + d }
+^^^^^^^^^^^^^^^
+2022.12.06 18:23:51 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.22s
+2022.12.06 18:23:55 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.7s
+2022.12.06 18:24:36 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.85s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:30:22: 
+Not found: type t
+def myFoldLeft2(acc: t)(t: Tree)(f: (t, t) => t): t = t match {
+                     ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:30:38: 
+Not found: type t
+def myFoldLeft2(acc: t)(t: Tree)(f: (t, t) => t): t = t match {
+                                     ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:30:41: 
+Not found: type t
+def myFoldLeft2(acc: t)(t: Tree)(f: (t, t) => t): t = t match {
+                                        ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:30:47: 
+Not found: type t
+def myFoldLeft2(acc: t)(t: Tree)(f: (t, t) => t): t = t match {
+                                              ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:30:51: 
+Not found: type t
+def myFoldLeft2(acc: t)(t: Tree)(f: (t, t) => t): t = t match {
+                                                  ^
+2022.12.06 18:25:04 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.72s
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:33:26: 
+Found:    (d : Int)
+Required: MdocApp.this.Tree
+        val res = f(acc, d)
+                         ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:34:31: 
+Found:    (res : MdocApp.this.Tree)
+Required: Int
+        myFoldLeft(myFoldLeft(res)(r)(f))(l)(f)
+                              ^^^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:34:39: 
+Found:    (f : (MdocApp.this.Tree, MdocApp.this.Tree) => MdocApp.this.Tree)
+Required: (Int, Int) => Int
+        myFoldLeft(myFoldLeft(res)(r)(f))(l)(f)
+                                      ^
+[31merror[39m: workspace/src/main/scala/fold.worksheet.sc:34:46: 
+Found:    (f : (MdocApp.this.Tree, MdocApp.this.Tree) => MdocApp.this.Tree)
+Required: (Int, Int) => Int
+        myFoldLeft(myFoldLeft(res)(r)(f))(l)(f)
+                                             ^
+2022.12.06 18:25:29 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.4s
+2022.12.06 18:25:45 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.65s
+2022.12.06 18:32:26 INFO  shutting down Metals
+2022.12.06 18:34:54 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/lsp.trace.json or /Users/jackmcdonald/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.12.06 18:34:55 INFO  logging to file /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/.metals/metals.log
+2022.12.06 18:34:55 INFO  Started: Metals version 0.11.9 in workspace '/Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483' for client Visual Studio Code 1.73.1.
+2022.12.06 18:34:58 INFO  time: initialize in 3.04s
+2022.12.06 18:35:02 WARN  Build server is not auto-connectable.
+2022.12.06 18:35:02 WARN  no build tool detected in workspace '/Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.12.06 18:35:14 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/fold.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.06 18:35:20 INFO  time: code lens generation in 17s
+2022.12.06 18:35:24 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/fold.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.06 18:35:24 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 21s
+Dec 06, 2022 6:37:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+2022.12.06 18:37:35 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 1.99s
+2022.12.06 18:48:06 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 1.05s
+2022.12.06 18:48:24 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.92s
+2022.12.06 18:49:08 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.83s
+2022.12.06 18:49:57 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.79s
+Dec 06, 2022 6:50:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 195
+2022.12.06 18:50:17 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.79s
+2022.12.06 18:50:21 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.76s
+2022.12.06 18:50:38 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.67s
+2022.12.06 18:50:57 INFO  time: evaluated worksheet 'fold.worksheet.sc' in 0.9s

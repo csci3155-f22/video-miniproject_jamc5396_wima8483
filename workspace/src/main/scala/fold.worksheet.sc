@@ -21,8 +21,11 @@ def myFoldLeft(acc: Int)(t: Tree)(f: (Int, Int) => Int): Int = t match {
     case Empty => acc
     case Node(l, d, r) => {
         val res = f(acc, d)
-        myFoldLeft(myFoldLeft(res)(r)(f))(l)(f)
+        myFoldLeft(myFoldLeft(res)(l)(f))(r)(f)
     }
 }
 
 myFoldLeft(0)(t){ (acc, d) => acc + d }
+
+val t2: Tree = Node(Node(Empty, 10, Empty), 5, Node(Empty, 2, Empty))
+myFoldLeft(0)(t2) { (acc, d) => acc + d } 
