@@ -28,7 +28,12 @@ val l1: List = Cons(1, Cons(2, Cons(3, Empty)))
 
 def myMap(l: List)(f: Int => Int): List = {
     def loop(l: List): List = l match {
-        case Empty => ???
-        case Cons(h, tail) => loop(tail)
+        case Empty => Empty
+        case Cons(h, tail) => (f(h), tail) match {
+            case (res, t) => Cons(res, loop(t))
+        }
     }
+    loop(l)
 }
+
+myMap(l1){ i => i+1 }
