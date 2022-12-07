@@ -42,6 +42,7 @@ Overview of higher-order functions in Scala
 Foldleft v. Foldright
 - https://coderwall.com/p/4l73-a/scala-fold-foldleft-and-foldright 
 - https://stackoverflow.com/questions/24370549/foldleft-v-foldright-does-it-matter
+- https://users.scala-lang.org/t/implementing-tree-like-fold/4714
 
 flatMap
 - https://www.geeksforgeeks.org/scala-flatmap-method/
