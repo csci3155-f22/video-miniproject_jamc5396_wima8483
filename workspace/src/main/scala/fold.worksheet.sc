@@ -37,5 +37,5 @@ def myFoldLeft(acc: Int)(t: Tree)(f: (Int, Int) => Int): Int = {
 
 myFoldLeft(0)(t){ (acc, d) => acc + d }
 
-val t2: Tree = Node(Node(Empty, 20, Empty), 5, Node(Empty, 4, Empty))
+val t2: Tree = Node(Node(Empty, 30, Empty), 5, Node(Empty, 4, Empty))
 myFoldLeft(0)(t2) { (acc, d) => acc + d } 
