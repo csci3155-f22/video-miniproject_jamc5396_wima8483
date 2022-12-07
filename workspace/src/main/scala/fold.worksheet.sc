@@ -24,14 +24,20 @@ Our foldLeft is very easy to grasp; when we have reached the end of the tree, re
 If we have not reached the end of the tree (case Node(l, d, r)) we have a nested call to myFoldLeft
 that recurses down every left subtree before calling the fold on the right subtree
 */
-def myFoldLeft(acc: Int)(t: Tree)(f: (Int, Int) => Int): Int = t match {
-    case Empty => acc
-    case Node(l, d, r) => {
-        myFoldLeft(myFoldLeft(f(acc, d))(l)(f))(r)(f)
+def myFoldLeft(acc: Int)(t: Tree)(f: (Int, Int) => Int): Int = {
+    def loop(acc: Int)(t: Tree): Int = t match {
+        case Empty => acc
+        case Node(l, d, r) => {
+            val lSubTree = loop(acc)(l)
+            val rSubTree = loop(acc)(r)
+            val lAndR = f(lSubTree, rSubTree)
+            loop(f(d, lAndR))(Empty)
+        }
     }
+    loop(0)(t)
 }
 
 myFoldLeft(0)(t){ (acc, d) => acc + d }
 
-val t2: Tree = Node(Node(Empty, 10, Empty), 5, Node(Empty, 2, Empty))
+val t2: Tree = Node(Node(Empty, 10, Empty), 5, Node(Empty, 4, Empty))
 myFoldLeft(0)(t2) { (acc, d) => acc + d } 
