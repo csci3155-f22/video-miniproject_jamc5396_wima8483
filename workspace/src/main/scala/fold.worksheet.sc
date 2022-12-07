@@ -10,6 +10,7 @@ foldRight will read the list from right to left
 val fl = l.foldLeft(List.empty){ (acc, i) => i :: acc }
 val fr = l.foldRight(List.empty){ (acc, i) => acc :: i }
 
+//Tree data structure where nodes contain integers
 sealed trait Tree
 case object  Empty extends Tree
 case class Node(l:Tree, d:Int, r:Tree) extends Tree
@@ -17,11 +18,16 @@ case class Node(l:Tree, d:Int, r:Tree) extends Tree
 val t: Tree = Node(Node(Empty, 2, Empty), 1, Empty)
 t
 
+
+/*
+Our foldLeft is very easy to grasp; when we have reached the end of the tree, return the accumulator.
+If we have not reached the end of the tree (case Node(l, d, r)) we have a nested call to myFoldLeft
+that recurses down every left subtree before calling the fold on the right subtree
+*/
 def myFoldLeft(acc: Int)(t: Tree)(f: (Int, Int) => Int): Int = t match {
     case Empty => acc
     case Node(l, d, r) => {
-        val res = f(acc, d)
-        myFoldLeft(myFoldLeft(res)(l)(f))(r)(f)
+        myFoldLeft(myFoldLeft(f(acc, d))(l)(f))(r)(f)
     }
 }
 
