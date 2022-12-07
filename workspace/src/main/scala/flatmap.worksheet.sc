@@ -25,9 +25,13 @@ def myFlatMap(l: List)(f: Int => Int): List = {
             case (None, tail) => loop(tail)
             case (Some(value), tail) => Conz(f(value), loop(tail))
         }
+        case Conz(h, t) => Conz(f(h), loop(t))
     }
     loop(l)
 }
+
+val l3 = Conz(1, Conz(2, Conz(3, Empty)))
+myFlatMap(l3){ i => i+1 }
 
 myFlatMap(l1){ i => i+1 }
 myFlatMap(l1){ i => i%2 }
