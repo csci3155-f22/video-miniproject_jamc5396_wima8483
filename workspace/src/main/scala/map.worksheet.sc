@@ -26,3 +26,9 @@ case class Cons(h: Int, tail: List) extends List
 
 val l1: List = Cons(1, Cons(2, Cons(3, Empty)))
 
+def myMap(l: List)(f: Int => Int): List = {
+    def loop(l: List): List = l match {
+        case Empty => ???
+        case Cons(h, tail) => loop(tail)
+    }
+}
