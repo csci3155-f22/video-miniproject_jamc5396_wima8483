@@ -37,3 +37,6 @@ def myMap(l: List)(f: Int => Int): List = {
 }
 
 myMap(l1){ i => i+1 }
+
+//can nest myMap as well
+myMap(myMap(l1){i => i+1 }){ i => i+1 }
