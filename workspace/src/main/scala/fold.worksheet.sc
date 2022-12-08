@@ -11,9 +11,9 @@ val fl = l.foldLeft(List.empty){ (acc, i) => i :: acc }
 val fr = l.foldRight(List.empty){ (acc, i) => acc :: i }
 
 //Tree data structure where nodes contain integers
-sealed trait Tree
-case object  Empty extends Tree
-case class Node(l:Tree, d:Int, r:Tree) extends Tree
+sealed trait Tree[A]
+case class Empty[A]() extends Tree[A]
+case class Node[A](l:Tree[A], d: A, r:Tree[A]) extends Tree[A]
 
 val t: Tree = Node(Node(Empty, 2, Empty), 1, Empty)
 t

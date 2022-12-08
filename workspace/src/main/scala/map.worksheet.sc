@@ -20,11 +20,11 @@ To deepen our understanding we will now implement our own list class
 and our own map function
 */
 
-sealed trait List
-case object Empty extends List
-case class Cons(h: Int, tail: List) extends List
+sealed trait List[A]
+case class Nil[A]() extends List[A]
+case class Cons[A](h: A, tail: List[A]) extends List[A]
 
-val l1: List = Cons(1, Cons(2, Cons(3, Empty)))
+val l1: List[Int] = Cons(1, Cons(2, Cons(3, Nil[Int]())))
 
 def myMap(l: List)(f: Int => Int): List = {
     def loop(l: List): List = l match {
