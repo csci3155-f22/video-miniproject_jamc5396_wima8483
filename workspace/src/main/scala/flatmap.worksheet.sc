@@ -6,7 +6,10 @@ val l2 = l map { i => i match {
 } }
 l2.flatten
 
-l flatMap {_.map { i => i+1 } }
+l flatMap { i => i match {
+    case None => None
+    case Some(value) => Some(value+1)
+} }
 
 sealed trait List[A]
 case class Nil[A]() extends List[A]
@@ -17,7 +20,7 @@ val l1 = Cons(None, Cons(Some(2), Cons(None, Cons(Some(3), Nil[Option[Int]]())))
 def myFoldLeft[A](acc: A)(l: List[A])(f: (A, A) => A): A = {
     def loop(acc: A)(l: List[A]): A = l match {
         case Nil[A]() => acc
-        case Cons(h, t) => loop(f(h, acc))(t)
+        case Cons(h, t) => loop(f(acc, h))(t)
     }
     loop(acc)(l)
 }
@@ -26,14 +29,32 @@ val l5 = Cons(1, Cons(2, Cons(3, Nil[Int]())))
 
 myFoldLeft(0)(l5){ (acc, h) => h+acc }
 
-/*
-def myFlatMap[A, B](l: List[A])(f: A => List[B]): List[B] = {
-    myFoldLeft(Nil[B]())( (List[A], List[A]) => List[A] )
+def concat[A](l1: List[A], l2: List[A]): List[A] = l1 match {
+        case Cons(h, tail) => Cons(h, concat(tail, l2))
+        case Nil() => l2 match {
+            case Cons(h, tail) => Cons(h, concat(Nil(), tail))
+            case Nil() => Nil()
+        }
 }
 
-val l3 = Cons(1, Cons(2, Cons(3, Nil[Int]())))
-myFlatMap(l3){ i => i+1 }
+val lA = Cons(1, Nil[Int]())
+val lT = Cons(2, Nil[Int]())
+concat(lA, lT)
 
+def myFlatMap[A, B](l: List[A])(f: A => List[B]): List[B] = {
+    def loop(r: List[B])(l: List[A]): List[B] = l match {
+        case Nil[A]() => Nil[B]()
+        case Cons(h, t) => (h, t) match {
+            case (None, tail) => loop(r)(tail)
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+        }
+    }
+    loop(Nil[B]())(l)
+}
+
+val l3 = Cons(Some(1), Cons(Some(2), Cons(Some(3), Nil[Some[Int]]())))
+myFlatMap(l3){ i => i }
+/*
 myFlatMap(l1){ i => i+1 }
 myFlatMap(l1){ i => i%2 }
 
