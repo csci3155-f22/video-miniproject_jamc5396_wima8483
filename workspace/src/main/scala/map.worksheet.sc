@@ -26,12 +26,10 @@ case class Cons[A](h: A, tail: List[A]) extends List[A]
 
 val l1: List[Int] = Cons(1, Cons(2, Cons(3, Nil[Int]())))
 
-def myMap(l: List)(f: Int => Int): List = {
-    def loop(l: List): List = l match {
-        case Empty => Empty
-        case Cons(h, tail) => (f(h), tail) match {
-            case (res, t) => Cons(res, loop(t))
-        }
+def myMap[A, B](l: List[A])(f: A => B): List[B] = {
+    def loop(l: List[A]): List[B] = l match {
+        case Nil[A]() => Nil[B]()
+        case Cons(h, tail) => Cons(f(h), loop(tail))
     }
     loop(l)
 }
