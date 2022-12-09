@@ -14,19 +14,24 @@ case class Cons[A](h: A, tail: List[A]) extends List[A]
 
 val l1 = Cons(None, Cons(Some(2), Cons(None, Cons(Some(3), Nil[Option[Int]]()))))
 
-def myFlatMap(l: List)(f: Int => Int): List = {
-    def loop(l: List): List = l match {
-        case Empty => Empty
-        case Cons(h, t) => (h, t) match {
-            case (None, tail) => loop(tail)
-            case (Some(value), tail) => Conz(f(value), loop(tail))
-        }
-        case Conz(h, t) => Conz(f(h), loop(t))
+def myFoldLeft[A](acc: A)(l: List[A])(f: (A, A) => A): A = {
+    def loop(acc: A)(l: List[A]): A = l match {
+        case Nil[A]() => acc
+        case Cons(h, t) => loop(f(h, acc))(t)
     }
-    loop(l)
+    loop(acc)(l)
 }
 
-val l3 = Conz(1, Conz(2, Conz(3, Empty)))
+val l5 = Cons(1, Cons(2, Cons(3, Nil[Int]())))
+
+myFoldLeft(0)(l5){ (acc, h) => h+acc }
+
+/*
+def myFlatMap[A, B](l: List[A])(f: A => List[B]): List[B] = {
+    myFoldLeft(Nil[B]())( (List[A], List[A]) => List[A] )
+}
+
+val l3 = Cons(1, Cons(2, Cons(3, Nil[Int]())))
 myFlatMap(l3){ i => i+1 }
 
 myFlatMap(l1){ i => i+1 }
@@ -61,4 +66,5 @@ def myFlatMapT(t: Tree)(f: Int => Int): Tree = {
     loop(t)
 }
 myFlatMapT(t){ i => i+1 }
+*/
 */
