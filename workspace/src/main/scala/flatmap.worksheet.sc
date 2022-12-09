@@ -6,17 +6,13 @@ val l2 = l map { i => i match {
 } }
 l2.flatten
 
-l flatMap { i => i match {
-    case None => Nil
-    case Some(value) => (value+1).toString()
-} }
+l flatMap {_.map { i => i+1 } }
 
-sealed trait List
-case object Empty extends List
-case class Cons(h: Option[Int], tail: List) extends List
-case class Conz(h: Int, tail: List) extends List
+sealed trait List[A]
+case class Nil[A]() extends List[A]
+case class Cons[A](h: A, tail: List[A]) extends List[A]
 
-val l1 = Cons(None, Cons(Some(2), Cons(None, Cons(Some(3), Empty))))
+val l1 = Cons(None, Cons(Some(2), Cons(None, Cons(Some(3), Nil[Option[Int]]()))))
 
 def myFlatMap(l: List)(f: Int => Int): List = {
     def loop(l: List): List = l match {
