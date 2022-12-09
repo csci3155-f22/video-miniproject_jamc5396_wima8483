@@ -11756,3 +11756,4 @@ myFlatMap(l9)(ifEven)
 2022.12.09 11:32:58 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.55s
 2022.12.09 11:33:01 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.85s
 2022.12.09 11:33:30 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.92s
+2022.12.09 11:40:01 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 1.13s

@@ -17,18 +17,6 @@ case class Cons[A](h: A, tail: List[A]) extends List[A]
 
 val l1 = Cons(None, Cons(Some(2), Cons(None, Cons(Some(3), Nil[Option[Int]]()))))
 
-def myFoldLeft[A](acc: A)(l: List[A])(f: (A, A) => A): A = {
-    def loop(acc: A)(l: List[A]): A = l match {
-        case Nil[A]() => acc
-        case Cons(h, t) => loop(f(acc, h))(t)
-    }
-    loop(acc)(l)
-}
-
-val l5 = Cons(1, Cons(2, Cons(3, Nil[Int]())))
-
-myFoldLeft(0)(l5){ (acc, h) => h+acc }
-
 def concat[A](l1: List[A], l2: List[A]): List[A] = l1 match {
         case Cons(h, tail) => Cons(h, concat(tail, l2))
         case Nil() => l2 match {
