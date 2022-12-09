@@ -43,17 +43,20 @@ concat(lA, lT)
 
 def myFlatMap[A, B](l: List[A])(f: A => List[B]): List[B] = {
     def loop(r: List[B])(l: List[A]): List[B] = l match {
-        case Nil[A]() => Nil[B]()
-        case Cons(h, t) => (h, t) match {
-            case (None, tail) => loop(r)(tail)
-            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
-        }
+        case Nil[A]() => if (r == Nil[B]()) Nil[B]() else concat(r, Nil[B]())
+        case Cons(h, t) => loop(concat(r, f(h)))(t)
+            // case (None, tail) => loop(r)(tail)
+            // case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
     }
     loop(Nil[B]())(l)
 }
 
-val l3 = Cons(Some(1), Cons(Some(2), Cons(Some(3), Nil[Some[Int]]())))
-myFlatMap(l3){ i => i }
+val l9 = Cons(1, Cons(2, Cons(3, Nil[Int]())))
+val dup: Int => List[Int] = i => Cons(i, Cons(i, Nil[Int]()))
+myFlatMap(l9)(dup)
+
+val l3: List[Option[Int]] = Cons(Some(1), Cons(Some(2), Cons(Some(3), Nil[Option[Int]]())))
+myFlatMap(l3){ i =>  Nil() }
 /*
 myFlatMap(l1){ i => i+1 }
 myFlatMap(l1){ i => i%2 }

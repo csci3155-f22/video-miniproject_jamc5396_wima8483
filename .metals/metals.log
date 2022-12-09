@@ -11080,3 +11080,679 @@ Required: MdocApp.this.List[Nothing]
 myFlatMap(l3){ i => i }
                     ^
 2022.12.09 10:34:33 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.62s
+2022.12.09 10:38:17 INFO  no build target found for /Users/jackmcdonald/3155/video-miniproject_jamc5396_wima8483/workspace/src/main/scala/map.worksheet.sc. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.09 10:38:17 INFO  time: evaluated worksheet 'map.worksheet.sc' in 4.72s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:21: 
+Found:    (i : Some[Int])
+Required: MdocApp.this.List[Nothing]
+myFlatMap(l3){ i => i }
+                    ^
+2022.12.09 10:40:26 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.7s
+Dec 09, 2022 10:42:54 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.SignatureHelpProvider$.isValid(SignatureHelpProvider.scala:88)
+	at scala.meta.internal.pc.SignatureHelpProvider$.notCurrentApply(SignatureHelpProvider.scala:101)
+	at scala.meta.internal.pc.SignatureHelpProvider$.$anonfun$1(SignatureHelpProvider.scala:49)
+	at scala.collection.StrictOptimizedLinearSeqOps.loop$3(LinearSeq.scala:280)
+	at scala.collection.StrictOptimizedLinearSeqOps.dropWhile(LinearSeq.scala:282)
+	at scala.collection.StrictOptimizedLinearSeqOps.dropWhile$(LinearSeq.scala:278)
+	at scala.collection.immutable.List.dropWhile(List.scala:79)
+	at scala.meta.internal.pc.SignatureHelpProvider$.signatureHelp(SignatureHelpProvider.scala:49)
+
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:21: 
+Found:    (i : Some[Int])
+Required: MdocApp.this.List[Nothing]
+myFlatMap(l3){ i => i }
+                    ^
+2022.12.09 10:43:14 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.78s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:26: 
+Not found: type i
+myFlatMap(l3){ i => List[i] }
+                         ^
+2022.12.09 10:43:34 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.46s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:35: 
+Found:    (i : Some[Int])
+Required: Nothing
+myFlatMap(l3){ i => List[Nothing](i) }
+                                  ^
+2022.12.09 10:43:42 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.61s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:21: 
+Found:    List[Nothing]
+Required: MdocApp.this.List[Nothing]
+myFlatMap(l3){ i => List[Nothing]() }
+                    ^^^^^^^^^^^^^^^
+2022.12.09 10:43:46 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.58s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:21: 
+value List is not a member of repl.MdocSession.MdocApp - did you mean (MdocApp.this : repl.MdocSession.MdocApp).res0?
+myFlatMap(l3){ i => this.List[Nothing]() }
+                    ^^^^^^^^^
+2022.12.09 10:43:59 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.57s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:21: 
+value List is not a member of repl.MdocSession.MdocApp - did you mean (MdocApp.this : repl.MdocSession.MdocApp).res0?
+myFlatMap(l3){ i => this.List[Nothing] }
+                    ^^^^^^^^^
+2022.12.09 10:44:06 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.66s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:21: 
+Found:    (MdocApp.this : repl.MdocSession.MdocApp)
+Required: MdocApp.this.List[Nothing]
+myFlatMap(l3){ i => this : List[Nothing] }
+                    ^^^^
+2022.12.09 10:44:17 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.58s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:17: 
+Found:    Unit
+Required: MdocApp.this.List[Nothing]
+myFlatMap(l3){ i =>  }
+                ^
+2022.12.09 10:44:25 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.66s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:21: 
+Found:    Unit
+Required: MdocApp.this.List[Nothing]
+myFlatMap(l3){ i => () }
+                    ^^
+2022.12.09 10:44:32 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.52s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:57:10: 
+Found:    None.type
+Required: Some[Int]
+pattern type is incompatible with expected type
+    case None => None
+         ^^^^
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:57:18: 
+Found:    None.type
+Required: MdocApp.this.List[Nothing]
+    case None => None
+                 ^^^^
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:58:22: 
+Found:    Unit
+Required: MdocApp.this.List[Nothing]
+    case Some(value) => 
+                     ^^
+2022.12.09 10:49:22 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.45s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:57:10: 
+Found:    None.type
+Required: Some[Int]
+pattern type is incompatible with expected type
+    case None => None
+         ^^^^
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:57:18: 
+Found:    None.type
+Required: MdocApp.this.List[Nothing]
+    case None => None
+                 ^^^^
+2022.12.09 10:49:25 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.83s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 10:49:37 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 1.34s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:31: 
+parentheses are required around the parameter of a lambda
+myFlatMap(l3){ i: Option[Int] => i match {
+                              ^
+2022.12.09 10:50:07 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.82s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:36: 
+match may not be exhaustive.
+
+It would fail on pattern case: None
+
+myFlatMap(l3){ (i: Option[Int]) => i match {
+                                   ^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 10:50:53 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 1s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:51: ; expected but match found
+myFlatMap(l3){ (i: Option[Int]) => i: Option[Int] match {
+                                                  ^^^^^
+2022.12.09 10:52:35 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.38s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:37: 
+match may not be exhaustive.
+
+It would fail on pattern case: None
+
+myFlatMap(l3){ (i: Option[Int]) => (i: Option[Int]) match {
+                                    ^^^^^^^^^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 10:52:43 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 1s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:36: 
+match may not be exhaustive.
+
+It would fail on pattern case: None
+
+myFlatMap(l3){ (i: Option[Int]) => i match {
+                                   ^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 10:52:58 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 1.09s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:14: 
+Found:    Unit
+Required: Some[Int] => MdocApp.this.List[Nothing]
+myFlatMap(l3){ }
+             ^^^
+2022.12.09 10:56:03 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.61s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:21: 
+Found:    (i : Some[Int])
+Required: MdocApp.this.List[Nothing]
+myFlatMap(l3){ i => i }
+                    ^
+2022.12.09 11:02:20 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.62s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:21: 
+Found:    MdocApp.this.Nil.type
+Required: MdocApp.this.List[Nothing]
+myFlatMap(l3){ i => Nil }
+                    ^^^
+2022.12.09 11:02:31 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.49s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:21: 
+Found:    (i : Some[Int])
+Required: MdocApp.this.List[Nothing]
+myFlatMap(l3){ i => i }
+                    ^
+2022.12.09 11:02:34 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.51s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:21: 
+Found:    Unit
+Required: MdocApp.this.List[Nothing]
+myFlatMap(l3){ i => () }
+                    ^^
+2022.12.09 11:02:44 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.52s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:04:27 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 1.14s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:04:29 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.9s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:22: 
+Found:    MdocApp.this.Nil.type
+Required: MdocApp.this.List[Nothing]
+myFlatMap(l3){ i =>  Nil }
+                     ^^^
+2022.12.09 11:04:34 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.56s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:22: 
+method apply in object Nil must be called with () argument
+myFlatMap(l3){ i =>  Nil[Some[Int]] }
+                     ^^^^^^^^^^^^^^
+2022.12.09 11:05:33 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.5s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:05:45 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 1.3s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:06:22 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.97s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:55:71: 
+Found:    MdocApp.this.Nil[Some[Int]]
+Required: MdocApp.this.List[Option[Int]]
+val l3: List[Option[Int]] = Cons(Some(1), Cons(Some(2), Cons(Some(3), Nil[Some[Int]]())))
+                                                                      ^^^^^^^^^^^^^^^^
+2022.12.09 11:07:31 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.55s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:07:39 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.78s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:09:49 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.85s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:09:56 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.91s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:10:10 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.9s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:11:50 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.71s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:12:10 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.87s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:13:32 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.95s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:55:34: 
+Found:    (1 : Int)
+Required: Option[Int]
+val l3: List[Option[Int]] = Cons(1, Cons(2, Cons(3, Nil[Int]())))
+                                 ^
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:55:42: 
+Found:    (2 : Int)
+Required: Option[Int]
+val l3: List[Option[Int]] = Cons(1, Cons(2, Cons(3, Nil[Int]())))
+                                         ^
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:55:50: 
+Found:    (3 : Int)
+Required: Option[Int]
+val l3: List[Option[Int]] = Cons(1, Cons(2, Cons(3, Nil[Int]())))
+                                                 ^
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:55:53: 
+Found:    MdocApp.this.Nil[Int]
+Required: MdocApp.this.List[Option[Int]]
+val l3: List[Option[Int]] = Cons(1, Cons(2, Cons(3, Nil[Int]())))
+                                                    ^^^^^^^^^^
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:58:5: 
+Double definition:
+val l3: MdocApp.this.List[Option[Int]] in class MdocApp at line 101 and
+val l3: MdocApp.this.List[Option[Int]] in class MdocApp at line 110
+
+val l3: List[Option[Int]] = Cons(Some(1), Cons(Some(2), Cons(Some(3), Nil[Option[Int]]())))
+    ^
+2022.12.09 11:14:36 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.63s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:55:18: ; expected but ] found
+val l3: List[Int]] = Cons(1, Cons(2, Cons(3, Nil[Int]())))
+                 ^
+2022.12.09 11:14:41 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.36s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:58:5: 
+Double definition:
+val l3: MdocApp.this.List[Int] in class MdocApp at line 101 and
+val l3: MdocApp.this.List[Option[Int]] in class MdocApp at line 110
+
+val l3: List[Option[Int]] = Cons(Some(1), Cons(Some(2), Cons(Some(3), Nil[Option[Int]]())))
+    ^
+2022.12.09 11:14:43 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.52s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:58:5: 
+Double definition:
+val l3: MdocApp.this.List[Int] in class MdocApp at line 101 and
+val l3: MdocApp.this.List[Option[Int]] in class MdocApp at line 110
+
+val l3: List[Option[Int]] = Cons(Some(1), Cons(Some(2), Cons(Some(3), Nil[Option[Int]]())))
+    ^
+2022.12.09 11:14:44 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.45s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:14:54 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.95s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:14:55 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.93s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:15:01 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.94s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:15:09 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 1s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:29: ] expected but ( found
+myFlatMap(l3){ i =>  Nil[Int() }
+                            ^
+2022.12.09 11:16:00 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.27s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:16:05 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 1.05s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:16:15 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.75s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:19:14 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.82s
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:28: 
+match may not be exhaustive.
+
+It would fail on pattern case: (_, _)
+
+        case Cons(h, t) => (h, t) match {
+                           ^^^^^^
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:24: 
+the type test for A cannot be checked at runtime
+            case (Some(value: A), tail) => loop(concat(f(value), r))(tail)
+                       ^
+2022.12.09 11:19:19 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.67s
+Dec 09, 2022 11:20:47 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1576)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1574)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1576)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1574)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+[33mwarning[39m: workspace/src/main/scala/flatmap.worksheet.sc:49:23: 
+the type test for A cannot be checked at runtime
+            case Some(value: A) => loop(concat(f(value), r))(tail)
+                      ^
+2022.12.09 11:21:03 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.65s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:53:1: end of file expected but } found
+}
+^
+2022.12.09 11:28:28 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.56s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:53:1: end of file expected but } found
+}
+^
+2022.12.09 11:28:38 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.24s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:47:50: 
+Not found: tail
+        case Cons(h, t) => loop(concat(f(h), r))(tail)
+                                                 ^^^^
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:55:11: 
+Found:    (MdocApp.this.l : List[Option[Int]])
+Required: MdocApp.this.List[Any]
+myFlatMap(l){ i =>  Nil[Int]() }
+          ^
+2022.12.09 11:28:50 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.56s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:55:11: 
+Found:    (MdocApp.this.l : List[Option[Int]])
+Required: MdocApp.this.List[Any]
+myFlatMap(l){ i =>  Nil[Int]() }
+          ^
+2022.12.09 11:28:55 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.58s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:55:11: 
+Found:    (MdocApp.this.l : List[Option[Int]])
+Required: MdocApp.this.List[Any]
+myFlatMap(l){ i =>  Nil[Int]() }
+          ^
+2022.12.09 11:29:10 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.52s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:55:11: 
+Found:    (MdocApp.this.l : List[Option[Int]])
+Required: MdocApp.this.List[Any]
+myFlatMap(l){ i => i }
+          ^
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:55:20: 
+Found:    (i : Any)
+Required: MdocApp.this.List[Nothing]
+myFlatMap(l){ i => i }
+                   ^
+2022.12.09 11:29:40 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.49s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:93:3: } expected but end of file found
+*/
+  ^
+2022.12.09 11:29:44 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.27s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:55:21: 
+Found:    (i : Int)
+Required: MdocApp.this.List[Nothing]
+myFlatMap(l4){ i => i }
+                    ^
+2022.12.09 11:29:49 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.48s
+2022.12.09 11:30:33 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.71s
+2022.12.09 11:30:40 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.65s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:55:65: 
+Not found: Noen
+val ifEven: Int => Option[Int] = i => if(i%2 == 0) Some(i) else Noen
+                                                                ^^^^
+2022.12.09 11:31:10 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.54s
+2022.12.09 11:31:11 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 1.13s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:15: 
+Found:    (MdocApp.this.ifEven : Int => Option[Int])
+Required: Int => MdocApp.this.List[Nothing]
+myFlatMap(l9)(ifEven)
+              ^^^^^^
+2022.12.09 11:31:39 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.61s
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:15: 
+Found:    (MdocApp.this.ifEven : Int => Option[Int])
+Required: Int => MdocApp.this.List[Nothing]
+myFlatMap(l9)(ifEven)
+              ^^^^^^
+2022.12.09 11:31:43 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.44s
+Dec 09, 2022 11:32:13 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+Dec 09, 2022 11:32:52 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.SignatureHelpProvider$.isValid(SignatureHelpProvider.scala:88)
+	at scala.meta.internal.pc.SignatureHelpProvider$.notCurrentApply(SignatureHelpProvider.scala:101)
+	at scala.meta.internal.pc.SignatureHelpProvider$.$anonfun$1(SignatureHelpProvider.scala:49)
+	at scala.collection.StrictOptimizedLinearSeqOps.loop$3(LinearSeq.scala:280)
+	at scala.collection.StrictOptimizedLinearSeqOps.dropWhile(LinearSeq.scala:282)
+	at scala.collection.StrictOptimizedLinearSeqOps.dropWhile$(LinearSeq.scala:278)
+	at scala.collection.immutable.List.dropWhile(List.scala:79)
+	at scala.meta.internal.pc.SignatureHelpProvider$.signatureHelp(SignatureHelpProvider.scala:49)
+
+[31merror[39m: workspace/src/main/scala/flatmap.worksheet.sc:56:15: 
+Not found: ifEven
+myFlatMap(l9)(ifEven)
+              ^^^^^^
+2022.12.09 11:32:58 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.55s
+2022.12.09 11:33:01 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.85s
+2022.12.09 11:33:30 INFO  time: evaluated worksheet 'flatmap.worksheet.sc' in 0.92s
