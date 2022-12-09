@@ -46,3 +46,4 @@ Foldleft v. Foldright
 
 flatMap
 - https://www.geeksforgeeks.org/scala-flatmap-method/
+- https://stackoverflow.com/questions/20436614/implementing-listflatmap/20436648
