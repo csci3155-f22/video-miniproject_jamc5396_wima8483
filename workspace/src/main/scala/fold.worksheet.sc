@@ -15,7 +15,7 @@ sealed trait Tree[A]
 case class Empty[A]() extends Tree[A]
 case class Node[A](l:Tree[A], d: A, r:Tree[A]) extends Tree[A]
 
-val t: Tree = Node(Node(Empty, 2, Empty), 1, Empty)
+val t: Tree[Int] = Node(Node(Empty[Int](), 2, Empty[Int]()), 1, Empty[Int]())
 t
 
 
@@ -24,18 +24,18 @@ Our foldLeft implements post-order traversal. We will traverse in order of
 left subtree, right subtree, root, which gives us a true foldLeft with
 tail recursion, preventing stack overflows.
 */
-def myFoldLeft(acc: Int)(t: Tree)(f: (Int, Int) => Int): Int = {
-    def loop(acc: Int)(t: Tree): Int = t match {
-        case Empty => acc
+def myFoldLeft[A](acc: A)(t: Tree[A])(f: (A, A) => A): A = {
+    def loop(acc: A)(t: Tree[A]): A = t match {
+        case Empty[A]() => acc
         case Node(l, d, r) => {
             val lAndR = f(loop(acc)(l), loop(acc)(r))
-            loop(f(d, lAndR))(Empty)
+            loop(f(d, lAndR))(Empty[A]())
         }
     }
-    loop(0)(t)
+    loop(acc)(t)
 }
 
 myFoldLeft(0)(t){ (acc, d) => acc + d }
 
-val t2: Tree = Node(Node(Empty, 30, Empty), 5, Node(Empty, 4, Empty))
+val t2: Tree[Int] = Node(Node(Empty[Int](), 30, Empty[Int]()), 5, Node(Empty[Int](), 4, Empty[Int]()))
 myFoldLeft(0)(t2) { (acc, d) => acc + d } 
